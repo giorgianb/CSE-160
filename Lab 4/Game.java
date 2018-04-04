@@ -16,6 +16,10 @@ public class Game {
       System.out.print("Player 1: ");
       getValidMove(s, board, 1);
       printBoard(board);
+      checkRows(board);
+      checkColumns(board);
+      checkDiagonals(board);
+
       System.out.print("Player 2: ");
       getValidMove(s, board, 0);
       printBoard(board);
